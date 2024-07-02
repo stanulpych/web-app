@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block title %}Отзывы{% endblock title %}
+
+{% block content %}
+{% for feedback in object_list %}
+<div class="list-group">
+    <a  class="list-group-item list-group-item-action">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{ feedback.name }}</h5>
+        <small class="text-muted">{{ feedback.date }}</small>
+      </div>
+      <p class="mb-1">{{feedback.message}}</p>
+      
+    </a>
+    
+{% endfor %}
+{% endblock content %}
