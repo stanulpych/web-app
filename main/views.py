@@ -3,7 +3,7 @@ from . import models
 
 
 class HomePageView(TemplateView):
-    template_name = 'index.html'
+    template_name = 'home.html'
 
 
 class RoadmapPageView(TemplateView):
