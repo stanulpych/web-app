@@ -1,0 +1,57 @@
+{% extends 'index.html' %}
+{% block title %}Герои{% endblock title %}
+{% block content %}
+{% load static %}
+<div class="card-group ">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="card">
+      <img src="{% static 'photo/assasin.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ассасин</h5>
+        <p class="card-text">Герой ближнего боя, основной задачей кооторого является резкое сближение дистанции, благодаря способности, и убийству помогающих чемпионов</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="{% static 'photo/barbarian.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Варвар</h5>
+        <p class="card-text">Герой ближнего боя, который каждую секунду нахождения в бою становится сильнее, силен против других чемпионов ближнего боя</p>
+        
+      </div>
+    </div>
+    <div class="card">
+      <img src="{% static 'photo/healer.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Лекарь</h5>
+        <p class="card-text">Герой поддержки, главная способность которого это лечить союзника, наносит незначительный урон</p>
+        
+      </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'photo/mage.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Маг</h5>
+          <p class="card-text">Герой поддержки, который умеет обездвижевать противника и выключать его из боя на некоторое время</p>
+          
+        </div>
+      </div>
+      <div class="card">
+        <img src="{% static 'photo/melee.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Воин</h5>
+          <p class="card-text">Герой ближнего боя, исполняющий роль танка и перенаправляющий основной урон противника на себя</p>
+          
+        </div>
+        </div>
+        <div class="card">
+            <img src="{% static 'photo/range.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Рейнджер</h5>
+              <p class="card-text">Герой дальнего боя, основной задачей которого является постоянное нанесение урона издалека, не может жить долго без танка или сильного поддерживающего чемпиона</p>
+              
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

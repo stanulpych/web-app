@@ -7,4 +7,5 @@ urlpatterns = [
     path('roadmap/', views.RoadmapPageView.as_view(), name='roadmap'),
     path('feedback/', views.FeedbackPageView.as_view(), name='feedback'),
     path('feedback/list/', views.FeedbackListView.as_view(), name='feedback_list'),
+    path('heroes/', views.HeroesPageView.as_view(), name='heroes'),
 ]

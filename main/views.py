@@ -21,3 +21,7 @@ class FeedbackListView(ListView):
     model = models.Feedback
     template_name = 'feedback_list.html'
     context_object_name = 'feedback_list'
+
+
+class HeroesPageView(TemplateView):
+    template_name = 'heroes.html'

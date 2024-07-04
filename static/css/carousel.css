@@ -1,0 +1,16 @@
+.carousel {
+    width: 60%; /* Ширина карусели */
+    margin: 100px auto 0 auto; /* Отступ сверху и центрирование карусели */
+  }
+  
+  .carousel-inner {
+    height: 60vh; /* Высота карусели */
+  }
+  
+  .carousel-item img {
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+    margin: auto;
+  }
+  
